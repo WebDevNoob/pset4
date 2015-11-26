@@ -1,0 +1,32 @@
+0.  # BMP: 24-bit or 16 million 
+    # GIF: 256 colors
+    # JPEG: 24-bit or 16 million
+    # PNG: 24-bit or 16 million
+1.  GIF
+2.  Lossy compression reduces file size by changing
+    its atributes, while lossless trys to retain image
+    fidelity. 
+3.  JPEG
+4.  The data isn't touched, just the file pathing. 
+5.  Replace data stored with NULL or /0
+6.  stdint.h is a library of macros dealing with data types. 
+    it sets min and max for datatypes. 
+7.  You would use uint8_t and uint16_t to improve protability of
+    your program. DWORD might not exist!
+8.  BYTE: 8 bits
+    DWORD: 32 bits 
+    WORD: 16 bits
+    LONG: 32 bits
+9.  B then M
+10. bfSize is the size of entire file. Headers, padding...
+    biSize is the size of the image, minus headers, padding...
+11. If biHeight is negative the image is read starting from 
+    the upper left side.
+12. biBitCount
+13. If the file didn't previously exist it will NULL error
+14. The third argument to fread will always be 1 for us because
+    we only want to scan the file once
+15. Padding will be equal to 1
+16. fseek can change the pointers position in the file
+17. SEEK_CUR is the current pointer posistion of the file
+18. Turning the red pixels white allowed me to see a student holding a snake(?).
